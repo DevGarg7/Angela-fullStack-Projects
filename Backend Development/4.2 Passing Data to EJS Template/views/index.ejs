@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <% if(locals.length){ %>
+        <h1>Your name has <%= length %> characters</h1>
+        <%   }else{ %>
+            <h1>Enter your name below 👇</h1>
+            <%   } %>
+    
+    <form action="/ok" method="post">
+        <input type="text" name="first" placeholder="First Name">
+        <input type="text" name="last" placeholder="Last Name">
+        <input type="submit" value="ok">
+        
+    </form>
+
+<body>
+    
+</body>
+</html>
